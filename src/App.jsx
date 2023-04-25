@@ -11,7 +11,7 @@ function App() {
       <div className="bg-gray-900 min-h-screen text-white ">
         <Header account={account} setAccount={setAccount} />
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Main account={account} />} />
           <Route path="/:tokenId" element={<Detail />} />;
         </Routes>
       </div>
